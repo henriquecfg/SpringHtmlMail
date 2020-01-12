@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Order Confirmation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <h1>
+        Identifier Number: <span th:text="${bankAccount.id}"> </span>
+    </h1>
+    <p>
+        Instant: <span
+            th:text="${bankAccount.createdAt}"></span>
+    </p>
+    <p>
+        Client: <span th:text="${bankAccount.owner.name}"></span>
+    </p>
+    <p>
+        Number: <span th:text="${bankAccount.number}"></span>
+    </p>
+    <p>
+        Password: <span th:text="${bankAccount.password}"></span>
+    </p>
+    <p>
+        Fee: <span th:text="${bankAccount.mensalFee}"></span>
+    </p>
+
+</div>
+</body>
+</html>
